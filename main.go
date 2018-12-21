@@ -40,7 +40,7 @@ func main() {
 		go func() {
 			for raw := range urls {
 
-				u, err := url.ParseRequestURI(raw)
+				u, err := url.ParseRequestURI("https://"+raw)
 				if err != nil {
 					fmt.Printf("invalid url: %s\n", raw)
 					continue
