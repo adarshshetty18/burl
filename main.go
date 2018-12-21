@@ -42,7 +42,7 @@ func main() {
 
 				u, err := url.ParseRequestURI("https://"+raw)
 				if err != nil {
-					fmt.Printf("invalid url: %s\n", raw)
+					fmt.Printf("invalid url: %s\n","https://"+raw)
 					continue
 				}
 
